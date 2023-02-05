@@ -7,3 +7,27 @@
 # 3
 # -> 1
 
+
+# 1 Метод
+l = map(int, (input('Введите массив ').split()))
+c = int(input('Введите искомое число '))
+count =0
+
+for i in l:
+    if i == c:
+        count += 1
+print(count)
+
+# 2 Метод
+n = int(input("Введите длину массива "))
+l = [0] * n
+c = int(input('Введите искомое число '))
+count = 0
+
+for i in range (1,len(l)+1):
+        print(i , end = ' ')
+        if i == c:
+            count+=1
+print(f" Раз -> {count} " )
+
+        
