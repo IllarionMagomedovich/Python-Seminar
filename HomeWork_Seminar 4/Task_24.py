@@ -10,11 +10,20 @@
 
 # 4 -> 1 2 3 4
 
-n = int( input( 'Кустов = ' ) )
-lis = [ int(x) for x in input( 'Ягод -> ' ).split() ]
-n = len(lis)
-lis = lis + lis[:2]
-ma = 0
-for i in range(n):
-    ma = max( ma, lis[i] + lis[i+1] + lis[i+2] )
-print(ma)
+# n = int( input( 'Кустов = ' ) )
+# lis = [ int(x) for x in input( 'Ягод -> ' ).split() ]
+# n = len(lis)
+# lis = lis + lis[:2]
+# ma = 0
+# for i in range(n):
+#     ma = max( ma, lis[i] + lis[i+1] + lis[i+2] )
+# print(ma)
+
+a = int(input())
+if a >= 2 and a <= 17:
+    b = 3
+    p = a * a + b * b
+else:
+    b = 5
+p = (a + b) * (a + b)
+print(p)
