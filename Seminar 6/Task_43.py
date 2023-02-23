@@ -24,3 +24,4 @@ for i in range(len(list_n)-1):
     count+=count_i//2
     # print(count, count_i)
 print(count)
+
